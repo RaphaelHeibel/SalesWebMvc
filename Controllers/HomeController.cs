@@ -18,6 +18,13 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult About()
+    {
+        ViewData["message"] = "your application description page";
+
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();
