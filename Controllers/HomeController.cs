@@ -20,8 +20,10 @@ public class HomeController : Controller
 
     public IActionResult About()
     {
-        ViewData["message"] = "your application description page";
-
+        ViewData["Message"] = "Salles Web MVC App from C# Course";
+        ViewData["Professor"] = "Raphael R Heibel";
+        ViewData["Email"] = "raphaelrheibel@gmail.com";
+        
         return View();
     }
 
