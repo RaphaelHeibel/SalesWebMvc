@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using SalesWebMvc.Models;
+using SalesWebMvc.Models.ViewModels;
 
 namespace SalesWebMvc.Controllers;
 
@@ -23,7 +24,7 @@ public class HomeController : Controller
         ViewData["Message"] = "Salles Web MVC App from C# Course";
         ViewData["Professor"] = "Raphael R Heibel";
         ViewData["Email"] = "raphaelrheibel@gmail.com";
-        
+
         return View();
     }
 
@@ -35,6 +36,6 @@ public class HomeController : Controller
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier }); 
     }
 }
