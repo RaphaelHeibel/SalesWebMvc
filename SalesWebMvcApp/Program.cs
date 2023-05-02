@@ -1,9 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using SalesWebMvc.Data;
+using SalesWebMvcApp.Data;
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<SalesWebMvcContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("SalesWebMvcContext") ?? throw new InvalidOperationException("Connection string 'SalesWebMvcContext' not found.")));
+var services = builder.Services;
+
+services.AddDbContext<SalesWebMvcAppContext>();
+//builder.Services.AddDbContext<SalesWebMvcAppContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("WebApiDatabase") ?? throw new InvalidOperationException("Connection string 'WebApiDatabase' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
