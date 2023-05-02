@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesWebMvcApp", "SalesWebMvcApp\SalesWebMvcApp.csproj", "{49CB027E-E9A1-47C6-AEF3-FC70D7719A57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesWebMvcApp", "SalesWebMvcApp\SalesWebMvcApp.csproj", "{49CB027E-E9A1-47C6-AEF3-FC70D7719A57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9101E475-F751-45C6-97D1-8F38347EA7F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{49CB027E-E9A1-47C6-AEF3-FC70D7719A57} = {9101E475-F751-45C6-97D1-8F38347EA7F3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FC8D5EE-C66F-4DF0-B99F-66425F4038AD}
