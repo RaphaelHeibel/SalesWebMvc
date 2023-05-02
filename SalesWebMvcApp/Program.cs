@@ -5,8 +5,6 @@ var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 
 services.AddDbContext<SalesWebMvcAppContext>();
-//builder.Services.AddDbContext<SalesWebMvcAppContext>(options =>
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("WebApiDatabase") ?? throw new InvalidOperationException("Connection string 'WebApiDatabase' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
