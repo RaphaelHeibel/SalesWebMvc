@@ -1,2 +1,0 @@
-# SalesWebMvc
-Projeto Web MVC
