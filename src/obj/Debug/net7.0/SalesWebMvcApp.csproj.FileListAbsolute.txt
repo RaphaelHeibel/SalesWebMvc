@@ -301,3 +301,5 @@ C:\Users\rapha\OneDrive\Documentos\category-webservice\src\bin\Debug\net7.0\runt
 C:\Users\rapha\OneDrive\Documentos\category-webservice\src\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\rapha\OneDrive\Documentos\category-webservice\src\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\rapha\OneDrive\Documentos\category-webservice\src\obj\Debug\net7.0\SalesWebMvcApp.csproj.CopyComplete
+C:\Users\rapha\OneDrive\Documentos\category-webservice\src\bin\Debug\net7.0\MySqlConnector.dll
+C:\Users\rapha\OneDrive\Documentos\category-webservice\src\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll

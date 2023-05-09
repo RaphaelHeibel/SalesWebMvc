@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using src.Models;
 
@@ -9,11 +5,21 @@ namespace SalesWebMvcApp.Data
 {
     public class SalesContext : DbContext
     {
-        public SalesContext (DbContextOptions<SalesContext> options)
-            : base(options)
+     
+        public SalesContext(IConfiguration configuration)
         {
+            Configuration = configuration;
         }
 
-        public DbSet<src.Models.Department> Department { get; set; } = default!;
+        protected readonly IConfiguration Configuration;
+
+         protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            // connect to mysql with connection string from app settings
+            var connectionString = Configuration.GetConnectionString("SalesContext");
+            options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));  
+        }
+
+        public DbSet<Department> Department { get; set; } = default!;
     }
 }
