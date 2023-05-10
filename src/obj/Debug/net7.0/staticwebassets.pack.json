@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
+      "Id": "C:\\Users\\rapha\\OneDrive\\Documentos\\category-webservice\\src\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-quartz.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-quartz.css"
+    },
+    {
       "Id": "C:\\Users\\rapha\\OneDrive\\Documentos\\category-webservice\\src\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
