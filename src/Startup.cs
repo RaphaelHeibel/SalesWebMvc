@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using SalesWebMvcApp.Data;
+using src.Data;
 
 namespace src
 {
@@ -28,7 +29,11 @@ namespace src
 
             services.AddControllersWithViews();
 
+            #region Data
+            services.AddScoped<SeedingService>();
             services.AddDbContext<SalesContext>();
+            #endregion Data
+
         }
 
 
@@ -39,8 +44,10 @@ namespace src
             {
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
+
             }
 
+            
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -72,6 +79,7 @@ namespace src
             startup.ConfigureServices(WebAppBuilder.Services);
 
             var app = WebAppBuilder.Build();
+
             startup.Configure(app, app.Environment);
 
             app.Run();
