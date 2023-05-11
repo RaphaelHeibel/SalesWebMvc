@@ -20,12 +20,12 @@ namespace src
         public void ConfigureServices(IServiceCollection services)
         {
 
-            var connectionString = Configuration.GetConnectionString("SalesContext");
+            var connectionString = Configuration.GetConnectionString("BancoTeste");
 
             services.AddDbContext<SalesContext>(options =>
-                options.UseMySql(Configuration.GetConnectionString("SalesContext") ?? throw new InvalidOperationException("Connection string 'SalesContext' not found."), ServerVersion.AutoDetect(connectionString)));
+                options.UseMySql(connectionString ?? throw new InvalidOperationException("Connection string 'SalesContext' not found."), ServerVersion.AutoDetect(connectionString)));
 
-            // Add services to the container.
+
             services.AddControllersWithViews();
 
             services.AddDbContext<SalesContext>();
@@ -37,9 +37,7 @@ namespace src
 
             if (!app.Environment.IsDevelopment())
             {
-   
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 

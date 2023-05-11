@@ -5,21 +5,10 @@ namespace SalesWebMvcApp.Data
 {
     public class SalesContext : DbContext
     {
-     
-        public SalesContext(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+        public SalesContext (DbContextOptions<SalesContext> options) : base(options){}
+        public DbSet<Department> Department { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SalesRecord> SalesRecord { get; set; }
 
-        protected readonly IConfiguration Configuration;
-
-         protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
-            // connect to mysql with connection string from app settings
-            var connectionString = Configuration.GetConnectionString("SalesContext");
-            options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));  
-        }
-
-        public DbSet<Department> Department { get; set; } = default!;
     }
 }
