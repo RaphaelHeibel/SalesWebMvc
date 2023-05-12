@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using SalesWebMvcApp.Data;
 using src.Data;
+using src.Services;
 
 namespace src
 {
@@ -32,7 +33,11 @@ namespace src
             #region Data
             services.AddScoped<SeedingService>();
             services.AddDbContext<SalesContext>();
-            #endregion Data
+            #endregion 
+
+            #region Service
+            services.AddScoped<SellerService>();
+            #endregion 
 
         }
 

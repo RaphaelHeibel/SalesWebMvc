@@ -20,3 +20,13 @@ src/obj/Debug/net7.0/refint/SalesWebMvcApp.dll
 /.vs
 # ignore vscode files
 /.vscode
+
+.fake
+src/bin/Debug/net7.0/SalesWebMvcApp.dll
+src/bin/Debug/net7.0/SalesWebMvcApp.pdb
+src/obj/Debug/net7.0/project.razor.json
+src/obj/Debug/net7.0/SalesWebMvcApp.csproj.CoreCompileInputs.cache
+src/obj/Debug/net7.0/SalesWebMvcApp.dll
+src/obj/Debug/net7.0/SalesWebMvcApp.pdb
+src/obj/Debug/net7.0/ref/SalesWebMvcApp.dll
+src/obj/Debug/net7.0/refint/SalesWebMvcApp.dll
