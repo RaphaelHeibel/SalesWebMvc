@@ -1,6 +1,0 @@
-# ignore all logs
-*.log
-# ignore vs files
-/.vs
-# ignore vscode files
-/.vscode
