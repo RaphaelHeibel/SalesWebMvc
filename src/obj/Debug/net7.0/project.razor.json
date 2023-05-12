@@ -18695,6 +18695,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\rapha\\OneDrive\\Documentos\\category-webservice\\src\\Views\\Sellers\\Index.cshtml",
+      "TargetPath": "Views\\Sellers\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\rapha\\OneDrive\\Documentos\\category-webservice\\src\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
