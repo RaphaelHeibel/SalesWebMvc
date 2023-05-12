@@ -1,0 +1,22 @@
+src/bin/Debug/net7.0/SalesWebMvcApp.dll
+src/bin/Debug/net7.0/SalesWebMvcApp.pdb
+src/obj/Debug/net7.0/SalesWebMvcApp.dll
+src/obj/Debug/net7.0/SalesWebMvcApp.pdb
+src/obj/Debug/net7.0/ref/SalesWebMvcApp.dll
+src/obj/Debug/net7.0/refint/SalesWebMvcApp.dll
+src/bin/Debug/net7.0/SalesWebMvcApp.dll
+src/bin/Debug/net7.0/SalesWebMvcApp.pdb
+src/obj/Debug/net7.0/project.razor.json
+src/obj/Debug/net7.0/SalesWebMvcApp.csproj.CoreCompileInputs.cache
+src/obj/Debug/net7.0/SalesWebMvcApp.dll
+src/obj/Debug/net7.0/SalesWebMvcApp.GeneratedMSBuildEditorConfig.editorconfig
+src/obj/Debug/net7.0/SalesWebMvcApp.pdb
+src/obj/Debug/net7.0/ref/SalesWebMvcApp.dll
+src/obj/Debug/net7.0/refint/SalesWebMvcApp.dll
+
+# ignore all logs
+*.log
+# ignore vs files
+/.vs
+# ignore vscode files
+/.vscode
