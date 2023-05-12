@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using src.Models;
 using src.Services;
 
 namespace src.Controllers
@@ -13,6 +14,19 @@ namespace src.Controllers
         {
             var list = _sellerService.FindAll();
             return View(list);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Seller seller)
+        {
+            _sellerService.Insert(seller);
+            return RedirectToAction(nameof(Index));
         }
     }
 }
