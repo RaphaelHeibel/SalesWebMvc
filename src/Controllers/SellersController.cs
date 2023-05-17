@@ -29,6 +29,19 @@ namespace src.Controllers
             return View(viewModel);
         }
 
+        public IActionResult Details(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var obj = _sellerService.FindById(id.Value);
+
+            if (obj == null)
+                return NotFound();
+
+            return View(obj);
+        }
+
         public IActionResult Delete(int? id)
         {
             if (id == null)
@@ -42,6 +55,7 @@ namespace src.Controllers
             return View(obj);
         }
         #endregion
+
         #region POST
         [HttpPost]
         [ValidateAntiForgeryToken]
