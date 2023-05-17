@@ -10,16 +10,17 @@ namespace src.Services
         public SellerService(SalesContext context) => _context = context;
 
         public List<Seller> FindAll() => _context.Seller.ToList();
+        public Seller FindById(int id) => _context.Seller.FirstOrDefault(obj => obj.Id == id);
 
         public void Insert(Seller obj)
         {
-            obj.Department = _context.Department.First();
             _context.Add(obj);
             _context.SaveChanges();
         }
 
-        public void Delete(Seller obj)
+        public void Delete(int id)
         {
+            var obj = FindById(id);
             _context.Remove(obj);
             _context.SaveChanges();
         }

@@ -37,6 +37,7 @@ namespace src
 
             #region Service
             services.AddScoped<SellerService>();
+            services.AddScoped<DepartmentService>();
             #endregion 
 
         }
